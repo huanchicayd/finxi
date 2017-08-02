@@ -31,12 +31,12 @@
 				h1 {
 					color: $color-one;
 					font-family: $text-light;
-					@include font-size(55px);
+					@include font-size(75px);
 					
 					strong {
 						color: $color-three;
 						font-family: $text-bold;
-						@include font-size(55px);
+						@include font-size(75px);
 					}
 				}
 			}
@@ -66,10 +66,14 @@
 // Sobre
 .section-sobre {
 	@include background-radial;
-	
 	padding: 150px 0;
 	color: $color-one;
 	text-align: center;
+	
+	img {
+		max-width: 100%;
+		width: auto;
+	}
 	
 	h2 {
 		@include font-size(34px);

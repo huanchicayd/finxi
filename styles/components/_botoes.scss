@@ -1,0 +1,23 @@
+.btn {
+	padding: 15px 50px;
+	border: 0;
+	cursor: pointer;
+	font-family: $text-bold;
+}
+
+.btn-primary {
+	background: $color-three;
+	@include font-size(20px);
+	text-align: center;
+	color: $color-one;
+	@include transition(.5s);
+	
+	&:hover {
+		background: $color-two;
+	}
+}
+
+.btn-secondary {
+	background: rgba(255, 255, 255, .5);
+	border: 3px solid $color-one;
+}

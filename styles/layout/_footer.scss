@@ -6,9 +6,15 @@ footer {
 	}
 }
 
+.footer-upper * {
+	@include font-size(18px);
+	text-align: left;
+}
+
 .footer-upper {
 	background: rgba(0, 0, 0, .5);
 	padding: 50px 0;
+	
 	
 	.footer-brand {
 		width: 135px;

@@ -22,6 +22,7 @@
 <script src="scripts/jquery.js"></script>
 <script src="scripts/teste.js"></script>
 <script src="scripts/typed.js"></script>
+<script src="scripts/plugins/slick.js"></script>
 
 <script>
 
@@ -36,7 +37,8 @@
 		backSpeed: 10,
 		backDelay: 1500,
 		startDelay: 1000,
-		loop: true
+		loop: true,
+		cursorChar: ''
 	}
 
 	var typed = new Typed(".header-box h1", options);

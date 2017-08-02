@@ -37,7 +37,8 @@ img {
 }
 
 a {
-	color: $color-three;
+	color: $color-one;
+	font-family: $text-bold;
 }
 
 input,
@@ -82,5 +83,12 @@ a.btn-back {
 			transform: rotate(45deg);
 			left: -3px;
 		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		width: 85%;
+		max-width: 1536px;
 	}
 }
