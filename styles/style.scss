@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+//Base styles
+@import 'base/_reset';
+@import 'base/_normalize';
+@import 'base/_grid';
+@import 'base/_base';
+
+//Tools
+@import 'tools/_variables';
+
+//Components
+@import 'components/_form-contato';
+
+//Templates
+@import 'templates/_header';
+@import 'templates/_contato';
+@import 'templates/_home';
+
+
+@import 'templates/_footer';

@@ -1,0 +1,250 @@
+.particles-container {
+	overflow: hidden;
+	height: 100%;
+	min-height: 650px;
+}
+
+#particles-js {
+	height: 100%;
+	overflow: hidden;
+	background: #000;
+	
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.container {
+		position: relative;
+		height: 100%;
+		
+		.header-box {
+			position: absolute;
+			top: 30%;
+			left: 10%;
+			font-size: 34px;
+			z-index: 50;
+			cursor: default;
+			
+			h1 {
+				color: #fff;
+				font-family: $text-light;
+				
+				strong {
+					color: #1a93b2;
+					font-family: $text-bold;
+				}
+			}
+		}
+		
+		a.scroll-down {
+			position: absolute;
+			bottom: 50px;
+			left: 50%;
+			border: 2px solid #fff;
+			border-radius: 50%;
+			display: block;
+			width: 45px;
+			height: 45px;
+			z-index: 20;
+			text-align: center;
+			padding-top: 8px;
+			outline: 0;
+			
+			img {
+				width: 60%;
+			}
+		}
+	}
+}
+
+// Sobre
+
+.section-sobre {
+	background: rgba(10,81,98,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(10,81,98,1)), color-stop(100%, rgba(4,47,58,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5162', endColorstr='#042f3a', GradientType=1 );
+	
+	padding: 150px 0;
+	color: #fff;
+	text-align: center;
+	
+	h2 {
+		font-size: 34px;
+		font-family: $text-bold;
+		margin-bottom: 25px;
+	}
+	
+	p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.seta-container {
+	padding: 30px 50px;
+	margin: 50px 0;
+}
+
+.seta {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		height: 8px;
+		width: 50%;
+		background: #fff;
+		position: absolute;
+		border-radius: 5px;
+	}
+	
+	&:before {
+		left: 4px;
+		transform: rotate(5deg);
+	}
+	
+	&:after {
+		right: 4px;
+		transform: rotate(-5deg);
+	}
+}
+
+// Nosso target
+
+.section-nosso-target {
+	padding: 200px 0 600px 0;
+	background: url('../images/bg-proposta.png') no-repeat fixed;
+	background-size: cover;
+}
+
+.target-box-container {
+	height: 459px;
+	background: url("../images/linha-bg.png") no-repeat;
+}
+
+.target-box {
+	width: 90%;
+	padding-left: 30px;
+	font-size: 26px;
+	font-family: $text-regular;
+	color: $color-four;
+	line-height: 36px;
+	
+	h2 {
+		text-transform: lowercase;
+		font-size: 60px;
+		color: $color-three;
+		font-family: $text-bold;
+		position: relative;
+		transform: translatey(-40px) translatex(50px);
+		line-height: initial;
+	}
+	
+	h3 {
+		font-size: 26px;
+		font-family: $text-bold;
+		margin-top: 40px;
+	}
+}
+
+.target-list {
+	display: flex;
+	align-content: space-between;
+	position: relative;
+	top: 50px;
+	left: 62px;
+	
+	div {
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		border: 3px solid #a6acb1;
+		font-family: $text-bold;
+		color: $color-one;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		font-size: 24px;
+		background: rgba(91, 103, 112, .50);
+		
+		&:nth-child(2) {
+			position: relative;
+			
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				width: 30px;
+				height: 3px;
+				background: #a6acb1;
+				transform: translatex(-30px);
+			}
+		}
+		
+		&:nth-child(3) {
+			position: relative;
+			
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				width: 30px;
+				height: 3px;
+				background: #a6acb1;
+				transform: translatex(-30px);
+			}
+		}
+	}
+}
+
+.target-list div + div {
+	margin-left: 25px;
+}
+
+.side-box {
+	background: rgba(91, 103, 112, .75);
+	border-radius: 50px;
+	padding: 50px 45px;
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	color: $color-one;
+	
+	h3 {
+		font-size: 32px;
+		line-height: 50px;
+		font-family: $text-light;
+		font-weight: 100;
+	}
+	
+	button {
+		background: #1a93b2;
+		color: #fff;
+		border: 0;
+		padding: 20px 35px;
+		font-size: 22px;
+		margin: 30px 0;
+		font-family: $text-bold;
+		cursor: pointer;
+	}
+	
+	a {
+		color: $color-one;
+		font-family: $text-bold;
+	}
+}

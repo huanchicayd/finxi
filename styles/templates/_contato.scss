@@ -1,0 +1,36 @@
+.section-contact-form {
+	padding: 120px 25%;
+	background: $color-two;
+	color: $color-one;
+	
+	p {
+		font-size: 24px;
+		font-family: $text-regular;
+		width: 50%;
+		line-height: 32px;
+		position: relative;
+		
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 60px;
+			height: 20px;
+			background: url("../images/aspas.png") no-repeat;
+			transform: translate(-90px, 40px);
+		}
+	}
+	
+	h4 {
+		font-weight: initial;
+		font-size: 18px;
+		margin: 30px 0;
+	}
+}
+
+.under-footer {
+	background: $color-three;
+	height: 400px;
+}
