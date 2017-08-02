@@ -54,8 +54,10 @@
 				<div class="target-box-container">
 					<div class="target-box">
 						<h2>Nosso target</h2>
-						<p>Empreendedores e empresas que visam estruturar seus negócios gerando valor e impacto através do desenvolvimento e gestão de TI.</p>
-						<h3>Tenha um CTO e um time de tecnologia eficiente e disponível para ajudá-lo a tornar seu produto mais forte.</h3>
+						<div class="target-text">
+							<p>Empreendedores e empresas que visam estruturar seus negócios gerando valor e impacto através do desenvolvimento e gestão de TI.</p>
+							<p>Tenha um CTO e um time de tecnologia eficiente e disponível para ajudá-lo a tornar seu produto mais forte.</p>
+						</div>
 					</div>
 					<div class="target-list">
 						<div>
@@ -81,6 +83,7 @@
 			</div>
 		</div>
 	</div>
+	<?php include('footer-upper.php') ?>
 </section>
 
 <?php include('footer.php') ?>

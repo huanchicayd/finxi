@@ -1,0 +1,113 @@
+/**
+ * Remove the unit of a length
+ * @param {Number} $number - Number to remove unit from
+ * @return {Number} - Unitless number
+ *
+ **/
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+	
+	@return $number;
+}
+
+
+/**
+ * REM Font
+ */
+@function calculate-rem($size) {
+	$remSize: strip-unit($size / 16);
+	@return #{$remSize}rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size; //Fallback in px
+	font-size: calculate-rem($size);
+}
+
+
+
+/**
+ * REM All Propriedade
+ */
+@mixin rem($property, $values...) {
+	$max: length($values);
+	$pxValues: '';
+	$remValues: '';
+	
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+		$pxValues: #{$pxValues + $value*16}px;
+		
+		@if $i < $max {
+			$pxValues: #{$pxValues + " "};
+		}
+	}
+	
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+		$remValues: #{$remValues + $value}rem;
+		
+		@if $i < $max {
+			$remValues: #{$remValues + " "};
+		}
+	}
+	
+	#{$property}: $pxValues;
+	#{$property}: $remValues;
+}
+
+
+
+/**
+ * Transition
+ */
+@mixin transition($transition...) {
+	-moz-transition:    $transition;
+	-o-transition:      $transition;
+	-webkit-transition: $transition;
+	transition:         $transition;
+}
+
+
+/**
+ * Transform
+ */
+@mixin transform($value...) {
+	-webkit-transform: $value;
+	-moz-transform:    $value;
+	-ms-transform:     $value;
+	-o-transform:      $value;
+	transform:         $value;
+}
+
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	
+	&:-moz-placeholder { /* Firefox 18- */
+		@content;
+	}
+	
+	&::-moz-placeholder {  /* Firefox 19+ */
+		@content;
+	}
+	
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin background-radial {
+	background: rgba(10,81,98,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(10,81,98,1)), color-stop(100%, rgba(4,47,58,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(10,81,98,1) 0%, rgba(4,47,58,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5162', endColorstr='#042f3a', GradientType=1 );
+}

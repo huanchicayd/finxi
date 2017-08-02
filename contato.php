@@ -20,8 +20,7 @@
 			</div>
 		</div>
 	</div>
+	<?php include('footer-upper.php') ?>
 </div>
-
-<div class="under-footer"></div>
 
 <?php include('footer.php') ?>
