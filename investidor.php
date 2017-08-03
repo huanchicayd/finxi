@@ -7,21 +7,21 @@
 <section class="section-investidores-sobre">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-3">
+			<div class="col-xl-3 investidoresSobre-destaque">
 				<h3>Os melhores investimentos em Startups criteriosamente selecionadas.</h3>
 				<p>Nosso rígido processo de seleção aprova somente as melhores.</p>
 			</div>
-			<div class="col-xl-3">
+			<div class="col-xl-3 investidoresSobre-topicos">
 				<img src="images/modelo-escalavel.png" alt="">
-				<p>Empresas inovadoras que possuem modelos escaláveis e que datam crescimento acelerado</p>
+				<p><strong>Empresas inovadoras</strong> que possuem <strong>modelos escaláveis</strong> e que datam <strong>crescimento acelerado</strong></p>
 			</div>
-			<div class="col-xl-3">
+			<div class="col-xl-3 investidoresSobre-topicos">
 				<img src="images/relatorios.png" alt="">
-				<p>Construa seu portfólio e acompanhe através de relatórios trimestrais de performance pós-investimento</p>
+				<p><strong>Construa seu portfólio</strong> e acompanhe através de <strong>relatórios trimestrais de performance</strong> pós-investimento</p>
 			</div>
-			<div class="col-xl-3">
+			<div class="col-xl-3 investidoresSobre-topicos">
 				<img src="images/faturamento.png" alt="">
-				<p>Empresas com tração e faturamento anual consiste, com possibilidade de retorno de, em média, y% em z tempo.</p>
+				<p>Empresas com tração e <strong>faturamento anual consiste</strong>, com <strong>possibilidade de retorno de, em média, y% em z tempo.</strong></p>
 			</div>
 		</div>
 	</div>
@@ -32,12 +32,15 @@
 		<div class="row">
 			<div class="col-xl-3">
 				<div class="img-container">
-					<img src="" alt="">
+					<img src="images/investidor-depoimento.png" alt="">
 				</div>
 			</div>
 			<div class="col-xl-9">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur labore magni repellat? Iusto nobis non provident? Atque beatae cupiditate dolore ducimus impedit in iusto laudantium, neque, perferendis quasi, quibusdam vero.</p>
-				<h4>Investidor</h4>
+				<div class="depoimento-texto">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur labore magni repellat? Iusto nobis non provident? Atque beatae cupiditate dolore ducimus impedit in iusto laudantium, neque, perferendis quasi, quibusdam vero.
+					</p>
+					<h4>Investidor</h4>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -47,18 +50,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
-				<div class="form-investidores">
-					<h2>Quero mais informações para investir!</h2>
+				<div class="box-rounded form-investidores">
+					<h3>Quero mais informações para investir!</h3>
 					<p>
 						Preencha o formulário abaixo e entraremos em contato para lhe apresentar os melhores investimentos baseados em suas experiências.
 					</p>
 					<form action="">
 						<input type="text" placeholder="Nome *">
 						<input type="email" placeholder="Email *">
-						<input type="number" placeholder="Telefone *">
+						<input type="tel" placeholder="Telefone *">
+
+						<p class="form-campo-obrigatorio">* Campos obrigatórios</p>
+						<button class="btn btn-primary">Enviar</button>
 					</form>
-					<p>* Campos obrigatórios</p>
-					<button class="btn btn-primary">Enviar</button>
+
 				</div>
 			</div>
 		</div>

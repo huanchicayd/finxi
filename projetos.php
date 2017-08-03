@@ -25,7 +25,7 @@
 						</a>
 					</div>
 					<div>
-						<a href="#" data-fancybox="produtos">
+						<a data-fancybox data-src="#produto03" href="javascript:;">
 							<img src="images/projetos_gamertrials.png" alt="Logotipo da Gamertrials">
 						</a>
 					</div>

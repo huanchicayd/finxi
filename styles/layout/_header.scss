@@ -24,11 +24,11 @@
 		display: block;
 		overflow: hidden;
 		
-		@media (max-width: 1200px) {
+		@media (max-width: 1199px) {
 			display: none;
 			position: fixed;
 			z-index: 500;
-			background: #1a93b2;
+			background: $color-three;
 			top: 0;
 			bottom: 0;
 			left: 0;
@@ -39,9 +39,9 @@
 			overflow: hidden;
 		}
 		
-		@media (min-width: 1200px) {
-			display: block;
-		}
+		//@media (min-width: 1200px) {
+		//	display: block;
+		//}
 	}
 	
 	ul.nav-navmenu {
@@ -50,7 +50,7 @@
 		float: right;
 		margin-top: 15px;
 		
-		@media (max-width: 1200px) {
+		@media (max-width: 1199px) {
 			display: inherit;
 			float: none;
 			text-align: center;
@@ -68,7 +68,7 @@
 			transition: .5s;
 			font-weight: 600;
 			
-			@media (max-width: 1200px) {
+			@media (max-width: 1199px) {
 				width: 100%;
 				padding: 25px;
 				margin-left: 0;
@@ -77,6 +77,11 @@
 			
 			&:hover {
 				color: $color-three;
+				
+				@media (max-width: 1199px) {
+					color: $color-one;
+					background: $color-two;
+				}
 			}
 		
 		}
@@ -100,7 +105,7 @@ ul.nav-navmenu.visible {
 	z-index: 9999;
 	cursor: pointer;
 	
-	@media (max-width: 1200px) {
+	@media (max-width: 1199px) {
 		display: block;
 		z-index: 901;
 	}

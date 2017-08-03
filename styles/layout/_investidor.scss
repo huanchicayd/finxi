@@ -2,12 +2,25 @@
 	margin-top: 80px;
 	background: url("../images/banner-investidor.png") no-repeat;
 	background-size: cover;
-	text-align: center;
 	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 	h2 {
-		color: $color-one;
+		color: $color-three;
 		@include font-size(40px);
+		text-transform: lowercase;
+		font-family: $text-bold;
+		
+		&:after {
+			content: '';
+			display: block;
+			width: 70px;
+			margin: auto;
+			height: 3px;
+			background: $color-one;
+		}
 	}
 }
 
@@ -15,60 +28,111 @@
 	@include background-radial;
 	padding: 100px 0;
 	
-	img {
-		width: auto;
-		max-width: 100%;
-		display: block;
-		margin: auto;
+	.investidoresSobre-destaque {
+		padding-right: 50px;
+		
+		h3 {
+			font-family: $text-bold;
+			@include font-size(32px);
+			margin-bottom: 30px;
+		}
+		
+		p {
+			text-align: left;
+			font-family: $text-regular;
+			@include font-size(20px);
+		}
 	}
 	
-	h3 {
-		@include font-size(32px);
+	.investidoresSobre-topicos {
+		
+		img {
+			width: auto;
+			max-width: 100%;
+			display: block;
+			margin: auto;
+		}
+		
+		p {
+			text-align: center;
+			margin-top: 15px;
+			@include font-size(20px);
+		}
 	}
 	
-	p {
-		text-align: center;
-		margin-top: 15px;
-		@include font-size(18px);
-	}
 }
 
 .section-investidores-depoimento {
 	background: $color-two;
-	padding: 30px 0;
 	position: relative;
 	
 	.img-container {
-		width: 150px;
-		height: 150px;
+		width: 80%;
 		position: absolute;
 		top: 0;
 		left: 0;
-		border-radius: 10px;
+		border-radius: 50px;
+		@include transform(translatey(-25px));
 	}
 	
-	p {
-		@include font-size(24px);
-	}
-	
-	h4 {
-		color: $color-three;
+	.depoimento-texto {
+		padding: 30px 50px;
+		
+		p {
+			@include font-size(24px);
+			font-family: $text-regular;
+			text-overflow: ellipsis;
+		}
+		
+		h4 {
+			color: $color-three;
+			font-family: $text-bold;
+			@include font-size(20px);
+			margin-top: 50px;
+			
+			&:before {
+				content: '';
+				display: block;
+				width: 60px;
+				height: 2px;
+				background: $color-one;
+				position: relative;
+				top: -10px;
+			}
+		}
 	}
 }
 
 .section-form-investidores {
 	padding: 100px 0 0 0;
-	background: url("../images/bg-investidor.png") no-repeat fixed;
-	background-size: cover;
 	
 	.form-investidores {
-		background: $color-three;
-		border-radius: 25px;
-		padding: 50px;
 		margin-bottom: 150px;
+		margin-left: 100px;
 		width: 50%;
+		text-align: center;
+		
+		h3 {
+			@include font-size(30px);
+			font-family: $text-bold;
+			margin-bottom: 30px;
+		}
+		
+		p {
+			margin-bottom: 30px;
+			line-height: 20px;
+			padding: 0 50px;
+		}
+		
+		.form-campo-obrigatorio {
+			text-align: left;
+			padding: inherit;
+		}
 		
 		form {
+			width: 60%;
+			margin: auto;
+			
 			input {
 				width: 100%;
 				border: 0;

@@ -43,6 +43,7 @@ a {
 
 strong {
 	font-size: inherit;
+	font-family: $text-bold;
 }
 
 input,
@@ -50,8 +51,18 @@ textarea {
 	border: 0;
 	background: transparent;
 	font-family: $text-regular;
-	@include font-size(16px);
+	padding: 20px 0;
+	@include font-size(18px);
+	margin-bottom: 15px;
+	color: $color-one;
+	@include placeholder {
+		color: $color-one;
+		font-family: $text-bold;
+		opacity: 1;
+	}
 }
+
+
 
 a.btn-back {
 	width: 45px;
@@ -95,4 +106,19 @@ a.btn-back {
 		width: 85%;
 		max-width: 1536px;
 	}
+}
+
+//Logotipo Natio Footer Copyright
+[class^="logo-"], [class*=" logo-"] {
+	font-family: 'natio', sans-serif !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+.logo-natio:before {
+	content: "\e900";
 }

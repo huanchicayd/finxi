@@ -3,6 +3,15 @@ footer {
 		background: $color-three;
 		padding: 25px 0;
 		color: $color-one;
+		
+		a {
+			text-decoration: none;
+			@include transition(.5s);
+			
+			&:hover {
+				color: $color-two;
+			}
+		}
 	}
 }
 

@@ -28,7 +28,7 @@ $( document ).ready(function() {
 		
 		$(window).resize(function() {
 			var width = $(window).width();
-			if (width >= 1200){
+			if (width > 1199){
 				$('.navbar-navmenu').css('display', 'block');
 			} else {
 				$('.navbar-navmenu').css('display', 'none');
@@ -65,6 +65,15 @@ $( document ).ready(function() {
 			arrows: false
 		});
 	}
+	
+});
+
+$('.section-nosso-target').parallax({
+	imageSrc: 'images/bg-proposta.png'
+});
+
+$('.section-form-investidores').parallax({
+	imageSrc: 'images/bg-investidor.png'
 });
 
 // Typed JS, Frases de entrada da Home
@@ -85,3 +94,4 @@ function escreverNaTela() {
 	
 	var typed = new Typed(".header-box h1", options);
 }
+
