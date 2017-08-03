@@ -31,7 +31,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-3">
-
+				<div class="img-container">
+					<img src="" alt="">
+				</div>
 			</div>
 			<div class="col-xl-9">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur labore magni repellat? Iusto nobis non provident? Atque beatae cupiditate dolore ducimus impedit in iusto laudantium, neque, perferendis quasi, quibusdam vero.</p>
@@ -56,7 +58,7 @@
 						<input type="number" placeholder="Telefone *">
 					</form>
 					<p>* Campos obrigatórios</p>
-					<button>Enviar</button>
+					<button class="btn btn-primary">Enviar</button>
 				</div>
 			</div>
 		</div>

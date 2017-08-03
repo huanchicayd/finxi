@@ -4,14 +4,18 @@
 	left: 0;
 	width: 100%;
 	height: 80px;
-	background-color: #000;
-	color: #fff;
+	background-color: $color-two;
+	color: $color-one;
 	z-index: 100;
 	padding-top: 20px;
 	
 	.nav-brand {
 		img {
 			width: 135px;
+			
+			@media (max-width: 1200px) {
+				width: 115px;
+			}
 		}
 	}
 	
@@ -50,21 +54,29 @@
 			display: inherit;
 			float: none;
 			text-align: center;
+			margin-top: 75px;
 		}
 		
 		a {
 			display: inline-block;
-			color: #fff;
+			color: $color-one;
 			font-family: $text-light;
 			text-transform: uppercase;
 			text-decoration: none;
-			font-size: 18px;
+			@include font-size(18px);
 			margin-left: 50px;
 			transition: .5s;
 			font-weight: 600;
 			
+			@media (max-width: 1200px) {
+				width: 100%;
+				padding: 25px;
+				margin-left: 0;
+				@include font-size(22px);
+			}
+			
 			&:hover {
-				color: #1a93b2;
+				color: $color-three;
 			}
 		
 		}
@@ -86,6 +98,7 @@ ul.nav-navmenu.visible {
 	position: relative;
 	outline: none;
 	z-index: 9999;
+	cursor: pointer;
 	
 	@media (max-width: 1200px) {
 		display: block;
@@ -98,8 +111,9 @@ ul.nav-navmenu.visible {
 	margin: 0 auto;
 	height: 3px;
 	width: 25px;
-	background: #fff;
+	background: $color-one;
 	transition: .5s;
+	cursor: pointer;
 }
 
 .nav .menu-btn:before,
@@ -108,7 +122,7 @@ ul.nav-navmenu.visible {
 	display: block;
 	height: 3px;
 	width: 25px;
-	background: #fff;
+	background: $color-one;
 	position: absolute;
 	transition: .5s;
 }
@@ -126,15 +140,16 @@ ul.nav-navmenu.visible {
 }
 
 .nav.open .menu-btn:before {
-	transform: rotate(45deg);
+	@include transform(rotate(45deg));
 	top: 20px;
 }
 
 .nav.open .menu-btn:after {
-	transform: rotate(-45deg);
+	@include transform(rotate(-45deg));
 	bottom: 20px;
 }
 
 .btn-close {
 	z-index: 9999;
+	cursor: pointer;
 }

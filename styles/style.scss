@@ -4,6 +4,9 @@
 @import 'helpers/variables';
 @import 'helpers/mixins';
 
+//Fontes
+@import '../fonts/_fonts';
+
 //Base styles
 @import 'base/_reset';
 @import 'base/_normalize';
@@ -12,10 +15,14 @@
 
 //Plugins
 @import 'plugins/_slick';
+@import 'plugins/_fancybox';
 
 //Components
 @import 'components/_botoes.scss';
+@import 'components/_box-rounded';
 @import 'components/_form-contato';
+@import 'components/_projetos-slider-produtos';
+@import 'components/_projetos-produtos-internas';
 
 //Layout
 @import 'layout/_header';

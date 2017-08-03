@@ -1,0 +1,30 @@
+.projetosInterna {
+	
+	.projetosInterna-titulo {
+		@include font-size(34px);
+		text-align: center;
+		color: $color-three;
+		font-family: $text-bold;
+		margin-bottom: 70px;
+	}
+	
+	.projetosInterna-descricao {
+		color: $color-three;
+	}
+	
+	.projetosInterna-texto {
+		@include font-size(20px);
+		margin-bottom: 100px;
+	}
+	
+	.projetosInterna-citacao {
+		@include font-size(20px);
+		font-family: $text-italic-light;
+		margin-bottom: 50px;
+	}
+	
+	.projetosInterna-autor {
+		font-family: $text-bold;
+		text-align: center;
+	}
+}

@@ -41,6 +41,10 @@ a {
 	font-family: $text-bold;
 }
 
+strong {
+	font-size: inherit;
+}
+
 input,
 textarea {
 	border: 0;
