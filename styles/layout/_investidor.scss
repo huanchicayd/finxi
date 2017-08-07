@@ -28,7 +28,7 @@
 	@include background-radial;
 	padding: 100px 0;
 	
-	.investidoresSobre-destaque {
+	.investidores-sobre__destaque {
 		padding-right: 50px;
 		
 		h3 {
@@ -44,7 +44,7 @@
 		}
 	}
 	
-	.investidoresSobre-topicos {
+	.investidores-sobre__topicos {
 		
 		img {
 			width: auto;
@@ -66,7 +66,7 @@
 	background: $color-two;
 	position: relative;
 	
-	.img-container {
+	.investidores-depoimento__img-container {
 		width: 80%;
 		position: absolute;
 		top: 0;
@@ -75,7 +75,7 @@
 		@include transform(translatey(-25px));
 	}
 	
-	.depoimento-texto {
+	.investidores-depoimento__texto {
 		padding: 30px 50px;
 		
 		p {
@@ -124,11 +124,6 @@
 			padding: 0 50px;
 		}
 		
-		.form-campo-obrigatorio {
-			text-align: left;
-			padding: inherit;
-		}
-		
 		form {
 			width: 60%;
 			margin: auto;
@@ -139,6 +134,11 @@
 				border-bottom: 2px solid $color-one;
 				background: transparent;
 			}
+		}
+		
+		.form-campo-obrigatorio {
+			text-align: left;
+			padding: inherit;
 		}
 	}
 }

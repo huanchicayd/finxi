@@ -122,8 +122,10 @@
 // Nosso target
 .section-nosso-target {
 	padding: 200px 0 0 0;
-	//background: url('../images/bg-proposta.png') no-repeat fixed;
-	//background-size: cover;
+	
+	@media (max-width: 575px) {
+		padding: 50px 0 0 0;
+	}
 	
 	.row {
 		margin-bottom: 50px;
@@ -136,6 +138,12 @@
 	position: relative;
 	padding: 62px 0;
 	margin-bottom: 100px;
+	
+	@media (max-width: 575px) {
+		background: none;
+		margin-bottom: 50px;
+		padding: 0 0 62px 0;
+	}
 }
 
 .target-box {
@@ -144,6 +152,10 @@
 	font-family: $text-regular;
 	color: $color-four;
 	line-height: 36px;
+	
+	@media (max-width: 575px) {
+		width: 100%;
+	}
 	
 	h2 {
 		text-transform: lowercase;
@@ -154,6 +166,13 @@
 		position: absolute;
 		top: -42px;
 		left: 65px;
+		
+		@media (max-width: 575px) {
+			position: relative;
+			left: 0;
+			top: 0;
+			text-align: center;
+		}
 	}
 	
 	h3 {
@@ -167,6 +186,13 @@
 	border-left: 3px solid #a6acb1;
 	padding-left: 50px;
 	padding-bottom: 70px;
+	
+	@media (max-width: 575px) {
+		border: 0;
+		padding-left: 0;
+		text-align: center;
+		padding-bottom: 0;
+	}
 	
 	p {
 		@include font-size(24px);
@@ -186,6 +212,18 @@
 	bottom: -80px;
 	left: 62px;
 	
+	@media (max-width: 767px) {
+		bottom: -64px;
+	}
+	
+	@media (max-width: 575px) {
+		flex-direction: column;
+		position: relative;
+		left: 0;
+		align-items: center;
+	}
+	
+	
 	div {
 		width: 160px;
 		height: 160px;
@@ -200,6 +238,17 @@
 		@include font-size(24px);
 		background: rgba(91, 103, 112, .50);
 		
+		@media (max-width: 767px) {
+			width: 130px;
+			height: 130px;
+		}
+		
+		@media (max-width: 575px) {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 25px;
+		}
+		
 		&:nth-child(2) {
 			position: relative;
 			
@@ -212,6 +261,10 @@
 				height: 3px;
 				background: #a6acb1;
 				@include transform(translatex(-30px));
+				
+				@media (max-width: 575px) {
+					display: none;
+				}
 			}
 		}
 		
@@ -227,6 +280,10 @@
 				height: 3px;
 				background: #a6acb1;
 				@include transform(translatex(-30px));
+				
+				@media (max-width: 575px) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -234,6 +291,10 @@
 
 .target-list div + div {
 	margin-left: 25px;
+	
+	@media (max-width: 575px) {
+		margin-left: 0;
+	}
 }
 
 .side-box {
@@ -244,6 +305,12 @@
 	width: 80%;
 	margin-left: auto;
 	color: $color-one;
+	
+	@media (max-width: 1199px) {
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 	h3 {
 		@include font-size(32px);

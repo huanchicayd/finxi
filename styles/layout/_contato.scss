@@ -2,19 +2,29 @@
 	margin-top: 80px;
 	height: 200px;
 	background: url("../images/banner-contato.png") no-repeat center;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	
 	h2 {
-		@include font-size(42px);
+		color: $color-three;
+		@include font-size(40px);
 		text-transform: lowercase;
 		font-family: $text-bold;
-		color: $color-three;
+		
+		&:after {
+			content: '';
+			display: block;
+			width: 70px;
+			margin: auto;
+			height: 3px;
+			background: $color-one;
+		}
 	}
 }
 
-.secaoContatoGeral {
+.secao-contato-geral {
 	padding: 50px 0 0 0;
 	@include background-radial;
 	color: $color-one;
@@ -24,12 +34,7 @@
 		line-height: 32px;
 	}
 	
-	h4 {
-		@include font-size(18px);
-		margin: 30px 0;
-	}
-	
-	.boxModeloDeNegocios {
+	.box-modelo-negocios {
 		font-family: $text-bold;
 		margin-bottom: 100px;
 		display: flex;
@@ -40,11 +45,11 @@
 			width: 30%;
 		}
 		
-		.boxModeloDeNegocios-texto {
+		.box-modelo-negocios__texto {
 			padding-right: 60px;
 		}
 		
-		.boxModeloDeNegocios-destaque {
+		.box-modelo-negocios__destaque {
 			text-align: center;
 			margin: 0 30px;
 			
@@ -53,7 +58,7 @@
 			}
 		}
 		
-		.boxModeloDeNegocios-botao {
+		.box-modelo-negocios__botao {
 			
 			button {
 				display: block;
@@ -62,34 +67,52 @@
 		}
 	}
 	
-	.contatoInformacoesGerais {
+	.contato-informacoes-gerais {
 		margin-bottom: 100px;
 		display: flex;
 		justify-content: space-between;
 		
-		.contatoInformacoesGerais-texto {
+		.contato-informacoes-gerais__texto {
 			width: 50%;
 			padding-right: 100px;
 			
 			h3 {
 				@include font-size(30px);
 				font-family: $text-bold;
+				margin-bottom: 30px;
+			}
+			
+			p {
+				margin-bottom: 30px;
+			}
+			
+			a {
+				color: $color-three;
+				text-decoration: none;
 			}
 		}
 		
-		.contatoMapa {
+		.contato-mapa {
 			display: flex;
+			align-items: flex-end;
 			
-			.contatoMapa-endereco {
-				display: flex;
-				align-items: flex-end;
+			.contato-mapa__endereco {
 				
-				p {
+				address {
 					text-align: right;
+					font-style: inherit;
+					@include font-size(18px);
+					line-height: 26px;
+					
+					h4 {
+						text-transform: uppercase;
+						font-family: $text-bold;
+						font-size: inherit;
+					}
 				}
 			}
 			
-			.contatoMapa-mapa {
+			.contato-mapa__mapa {
 				width: 400px;
 				margin-left: 30px;
 			}

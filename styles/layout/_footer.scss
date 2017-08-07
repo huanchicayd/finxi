@@ -12,12 +12,24 @@ footer {
 				color: $color-two;
 			}
 		}
+		
+		.footer-natio {
+			text-align: right;
+		}
 	}
 }
 
 .footer-upper * {
 	@include font-size(18px);
 	text-align: left;
+	
+	@media (max-width: 767px) {
+		text-align: center;
+		
+		p {
+			text-align: center;
+		}
+	}
 }
 
 .footer-upper {
@@ -25,8 +37,27 @@ footer {
 	padding: 50px 0;
 	
 	
+	
+	.col-sm-12 {
+		margin-bottom: 50px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
 	.footer-brand {
-		width: 135px;
+		
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+		
+		img {
+			width: 135px;
+			
+			
+		}
+		
 	}
 	
 	.footer-endeavor img {
@@ -40,8 +71,18 @@ footer {
 		display: block;
 		margin-bottom: 30px;
 		
+		@media (max-width: 767px) {
+			display: flex;
+			justify-content: center;
+			width: auto;
+		}
+		
 		img {
 			height: 40px;
+			
+			@media (max-width: 767px) {
+				position: relative;
+			}
 		}
 		
 		&:after {
@@ -52,6 +93,11 @@ footer {
 			background: $color-one;
 			position: relative;
 			top: 5px;
+			
+			@media (max-width: 767px) {
+				position: absolute;
+				top: 50px;
+			}
 		}
 	}
 	

@@ -1,7 +1,7 @@
 <div class="footer-upper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-12">
 				<div class="footer-brand">
 					<img src="images/finxi-logo.svg" alt="">
 				</div>
@@ -9,7 +9,7 @@
 					<img src="images/endeavor.png" alt="">
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-12">
 				<div class="footer-image">
 					<img src="images/localizacao.svg" alt="">
 				</div>
@@ -20,7 +20,7 @@
 					20011-020
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-12">
 				<div class="footer-image">
 					<img src="images/email.svg" alt="">
 				</div>
@@ -29,7 +29,7 @@
 					contato@finxi.com.br
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-12">
 				<div class="footer-news">
 					<h4>Fique por dentro, assine nossa newsletter!</h4>
 					<form action="">

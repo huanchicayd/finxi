@@ -50,7 +50,7 @@
 <section class="section-nosso-target">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-xl-7">
+			<div class="col-xl-7 col-md-12 col-sm-12">
 				<div class="target-box-container">
 					<div class="target-box">
 						<h2>Nosso target</h2>
@@ -74,7 +74,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-12 col-xl-5">
+			<div class="col-xl-5 col-md-12 col-sm-12">
 				<div class="side-box">
 					<h3>Nosso porfólio é escolhido a partir de um criterioso processo de seleção.</h3>
 					<button>Vamos conversar?</button>

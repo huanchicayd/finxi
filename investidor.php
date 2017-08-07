@@ -7,19 +7,19 @@
 <section class="section-investidores-sobre">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-3 investidoresSobre-destaque">
+			<div class="col-xl-3 investidores-sobre__destaque">
 				<h3>Os melhores investimentos em Startups criteriosamente selecionadas.</h3>
 				<p>Nosso rígido processo de seleção aprova somente as melhores.</p>
 			</div>
-			<div class="col-xl-3 investidoresSobre-topicos">
+			<div class="col-xl-3 investidores-sobre__topicos">
 				<img src="images/modelo-escalavel.png" alt="">
 				<p><strong>Empresas inovadoras</strong> que possuem <strong>modelos escaláveis</strong> e que datam <strong>crescimento acelerado</strong></p>
 			</div>
-			<div class="col-xl-3 investidoresSobre-topicos">
+			<div class="col-xl-3 investidores-sobre__topicos">
 				<img src="images/relatorios.png" alt="">
 				<p><strong>Construa seu portfólio</strong> e acompanhe através de <strong>relatórios trimestrais de performance</strong> pós-investimento</p>
 			</div>
-			<div class="col-xl-3 investidoresSobre-topicos">
+			<div class="col-xl-3 investidores-sobre__topicos">
 				<img src="images/faturamento.png" alt="">
 				<p>Empresas com tração e <strong>faturamento anual consiste</strong>, com <strong>possibilidade de retorno de, em média, y% em z tempo.</strong></p>
 			</div>
@@ -31,12 +31,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-3">
-				<div class="img-container">
+				<div class="investidores-depoimento__img-container">
 					<img src="images/investidor-depoimento.png" alt="">
 				</div>
 			</div>
 			<div class="col-xl-9">
-				<div class="depoimento-texto">
+				<div class="investidores-depoimento__texto">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur labore magni repellat? Iusto nobis non provident? Atque beatae cupiditate dolore ducimus impedit in iusto laudantium, neque, perferendis quasi, quibusdam vero.
 					</p>
 					<h4>Investidor</h4>
