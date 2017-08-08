@@ -3293,7 +3293,7 @@ ul.nav-navmenu.visible {
 .particles-container {
   overflow: hidden;
   height: 100%;
-  min-height: 650px; }
+  min-height: 480px; }
   .particles-container #particles-js {
     height: 100%;
     overflow: hidden;
@@ -3313,16 +3313,29 @@ ul.nav-navmenu.visible {
         left: 10%;
         z-index: 50;
         cursor: default; }
+        @media (max-width: 991px) {
+          .particles-container #particles-js .container .header-box {
+            top: 25%; } }
+        @media (max-width: 767px) {
+          .particles-container #particles-js .container .header-box {
+            left: 0;
+            width: auto; } }
+        @media (max-width: 575px) {
+          .particles-container #particles-js .container .header-box {
+            top: 15%;
+            padding: 0 30px; } }
         .particles-container #particles-js .container .header-box h1 {
           color: #fff;
           font-family: "Calibri-Light";
           font-size: 75px;
           font-size: 4.6875rem; }
+          @media (max-width: 480px) {
+            .particles-container #particles-js .container .header-box h1 {
+              font-size: 60px;
+              font-size: 3.75rem; } }
           .particles-container #particles-js .container .header-box h1 strong {
             color: #1a93b2;
-            font-family: "Calibri-Bold";
-            font-size: 75px;
-            font-size: 4.6875rem; }
+            font-family: "Calibri-Bold"; }
       .particles-container #particles-js .container a.scroll-down {
         position: absolute;
         bottom: 50px;
@@ -3335,7 +3348,12 @@ ul.nav-navmenu.visible {
         z-index: 20;
         text-align: center;
         padding-top: 8px;
-        outline: 0; }
+        outline: 0;
+        -webkit-transform: translatex(-25%);
+        -moz-transform: translatex(-25%);
+        -ms-transform: translatex(-25%);
+        -o-transform: translatex(-25%);
+        transform: translatex(-25%); }
         .particles-container #particles-js .container a.scroll-down img {
           width: 60%; }
 
@@ -3367,6 +3385,9 @@ ul.nav-navmenu.visible {
 .seta-container {
   padding: 30px 50px;
   margin: 50px 0; }
+  @media (max-width: 575px) {
+    .seta-container {
+      padding: 30px 15px; } }
   .seta-container .seta {
     display: block;
     margin: 0 auto;
@@ -3637,8 +3658,16 @@ ul.nav-navmenu.visible {
     width: 85%;
     margin-right: auto;
     margin-left: auto; }
+    @media (max-width: 991px) {
+      .section-projetos-sobre .projetos-selecao-box {
+        flex-direction: column;
+        width: auto;
+        text-align: center; } }
     .section-projetos-sobre .projetos-selecao-box .projetos-selecao-box__texto {
       width: 65%; }
+      @media (max-width: 991px) {
+        .section-projetos-sobre .projetos-selecao-box .projetos-selecao-box__texto {
+          width: auto; } }
       .section-projetos-sobre .projetos-selecao-box .projetos-selecao-box__texto .texto-destaque {
         font-size: 36px;
         font-size: 2.25rem;
@@ -3649,6 +3678,11 @@ ul.nav-navmenu.visible {
     .section-projetos-sobre .projetos-selecao-box .projetos-selecao-box__botao {
       width: 35%;
       padding-left: 50px; }
+      @media (max-width: 991px) {
+        .section-projetos-sobre .projetos-selecao-box .projetos-selecao-box__botao {
+          width: auto;
+          margin-top: 35px;
+          padding-left: 0; } }
 
 .banner-investidor {
   margin-top: 80px;
@@ -3719,8 +3753,30 @@ ul.nav-navmenu.visible {
     -ms-transform: translatey(-25px);
     -o-transform: translatey(-25px);
     transform: translatey(-25px); }
+    @media (max-width: 1199px) {
+      .section-investidores-depoimento .investidores-depoimento__img-container {
+        width: auto; } }
+    @media (max-width: 991px) {
+      .section-investidores-depoimento .investidores-depoimento__img-container {
+        position: relative; } }
+    .section-investidores-depoimento .investidores-depoimento__img-container img {
+      display: block;
+      width: 100%;
+      margin: auto; }
+      @media (max-width: 991px) {
+        .section-investidores-depoimento .investidores-depoimento__img-container img {
+          width: 30%; } }
+      @media (max-width: 575px) {
+        .section-investidores-depoimento .investidores-depoimento__img-container img {
+          width: 50%; } }
   .section-investidores-depoimento .investidores-depoimento__texto {
     padding: 30px 50px; }
+    @media (max-width: 1199px) {
+      .section-investidores-depoimento .investidores-depoimento__texto {
+        padding: 30px 0 30px 15px; } }
+    @media (max-width: 991px) {
+      .section-investidores-depoimento .investidores-depoimento__texto {
+        text-align: center; } }
     .section-investidores-depoimento .investidores-depoimento__texto p {
       font-size: 24px;
       font-size: 1.5rem;
@@ -3740,6 +3796,14 @@ ul.nav-navmenu.visible {
         background: #fff;
         position: relative;
         top: -10px; }
+        @media (max-width: 991px) {
+          .section-investidores-depoimento .investidores-depoimento__texto h4:before {
+            left: 50%;
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+            transform: translatex(-50%); } }
 
 .section-form-investidores {
   padding: 100px 0 0 0; }
@@ -3748,6 +3812,13 @@ ul.nav-navmenu.visible {
     margin-left: 100px;
     width: 50%;
     text-align: center; }
+    @media (max-width: 1199px) {
+      .section-form-investidores .form-investidores {
+        width: 70%; } }
+    @media (max-width: 991px) {
+      .section-form-investidores .form-investidores {
+        width: 100%;
+        margin-left: 0; } }
     .section-form-investidores .form-investidores h3 {
       font-size: 30px;
       font-size: 1.875rem;
@@ -3757,9 +3828,15 @@ ul.nav-navmenu.visible {
       margin-bottom: 30px;
       line-height: 20px;
       padding: 0 50px; }
+      @media (max-width: 575px) {
+        .section-form-investidores .form-investidores p {
+          padding: 0; } }
     .section-form-investidores .form-investidores form {
       width: 60%;
       margin: auto; }
+      @media (max-width: 575px) {
+        .section-form-investidores .form-investidores form {
+          width: 100%; } }
       .section-form-investidores .form-investidores form input {
         width: 100%;
         border: 0;
@@ -3812,13 +3889,26 @@ ul.nav-navmenu.visible {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media (max-width: 991px) {
+      .secao-contato-geral .box-modelo-negocios {
+        flex-direction: column; } }
     .secao-contato-geral .box-modelo-negocios div {
       width: 30%; }
+      @media (max-width: 991px) {
+        .secao-contato-geral .box-modelo-negocios div {
+          width: auto; } }
     .secao-contato-geral .box-modelo-negocios .box-modelo-negocios__texto {
       padding-right: 60px; }
+      @media (max-width: 991px) {
+        .secao-contato-geral .box-modelo-negocios .box-modelo-negocios__texto {
+          text-align: center;
+          padding-right: 0; } }
     .secao-contato-geral .box-modelo-negocios .box-modelo-negocios__destaque {
       text-align: center;
       margin: 0 30px; }
+      @media (max-width: 991px) {
+        .secao-contato-geral .box-modelo-negocios .box-modelo-negocios__destaque {
+          margin: 40px 0; } }
       .secao-contato-geral .box-modelo-negocios .box-modelo-negocios__destaque p {
         font-size: 30px;
         font-size: 1.875rem; }
@@ -3829,9 +3919,17 @@ ul.nav-navmenu.visible {
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 991px) {
+      .secao-contato-geral .contato-informacoes-gerais {
+        flex-direction: column;
+        text-align: center; } }
     .secao-contato-geral .contato-informacoes-gerais .contato-informacoes-gerais__texto {
       width: 50%;
       padding-right: 100px; }
+      @media (max-width: 991px) {
+        .secao-contato-geral .contato-informacoes-gerais .contato-informacoes-gerais__texto {
+          width: auto;
+          padding-right: 0; } }
       .secao-contato-geral .contato-informacoes-gerais .contato-informacoes-gerais__texto h3 {
         font-size: 30px;
         font-size: 1.875rem;
@@ -3845,12 +3943,21 @@ ul.nav-navmenu.visible {
     .secao-contato-geral .contato-informacoes-gerais .contato-mapa {
       display: flex;
       align-items: flex-end; }
+      @media (max-width: 991px) {
+        .secao-contato-geral .contato-informacoes-gerais .contato-mapa {
+          flex-direction: column;
+          align-items: inherit;
+          margin-top: 50px; } }
       .secao-contato-geral .contato-informacoes-gerais .contato-mapa .contato-mapa__endereco address {
         text-align: right;
         font-style: inherit;
         font-size: 18px;
         font-size: 1.125rem;
         line-height: 26px; }
+        @media (max-width: 991px) {
+          .secao-contato-geral .contato-informacoes-gerais .contato-mapa .contato-mapa__endereco address {
+            text-align: center;
+            margin-bottom: 30px; } }
         .secao-contato-geral .contato-informacoes-gerais .contato-mapa .contato-mapa__endereco address h4 {
           text-transform: uppercase;
           font-family: "Calibri-Bold";
@@ -3858,6 +3965,10 @@ ul.nav-navmenu.visible {
       .secao-contato-geral .contato-informacoes-gerais .contato-mapa .contato-mapa__mapa {
         width: 400px;
         margin-left: 30px; }
+        @media (max-width: 991px) {
+          .secao-contato-geral .contato-informacoes-gerais .contato-mapa .contato-mapa__mapa {
+            width: auto;
+            margin-left: 0; } }
 
 footer .footer-copyright {
   background: #1a93b2;

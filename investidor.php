@@ -30,14 +30,14 @@
 <section class="section-investidores-depoimento">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-3">
+			<div class="col-xl-3 col-lg-3">
 				<div class="investidores-depoimento__img-container">
 					<img src="images/investidor-depoimento.png" alt="">
 				</div>
 			</div>
-			<div class="col-xl-9">
+			<div class="col-xl-9 col-lg-9">
 				<div class="investidores-depoimento__texto">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur labore magni repellat? Iusto nobis non provident? Atque beatae cupiditate dolore ducimus impedit in iusto laudantium, neque, perferendis quasi, quibusdam vero.
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur labore magni repellat? Iusto nobis non provident?
 					</p>
 					<h4>Investidor</h4>
 				</div>

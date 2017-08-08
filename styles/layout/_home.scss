@@ -2,7 +2,7 @@
 .particles-container {
 	overflow: hidden;
 	height: 100%;
-	min-height: 650px;
+	min-height: 480px;
 	
 	#particles-js {
 		height: 100%;
@@ -28,15 +28,35 @@
 				z-index: 50;
 				cursor: default;
 				
+				@media (max-width: 991px) {
+					top: 25%;
+				}
+				
+				@media (max-width: 767px) {
+					left: 0;
+					width: auto;
+				}
+				
+				@media (max-width: 575px) {
+					top: 15%;
+					padding: 0 30px;
+				}
+				
+				
+				
 				h1 {
 					color: $color-one;
 					font-family: $text-light;
 					@include font-size(75px);
 					
+					@media (max-width: 480px) {
+						@include font-size(60px);
+					}
+					
 					strong {
 						color: $color-three;
 						font-family: $text-bold;
-						@include font-size(75px);
+						//@include font-size(75px);
 					}
 				}
 			}
@@ -54,6 +74,7 @@
 				text-align: center;
 				padding-top: 8px;
 				outline: 0;
+				@include transform(translatex(-25%));
 				
 				img {
 					width: 60%;
@@ -90,6 +111,10 @@
 .seta-container {
 	padding: 30px 50px;
 	margin: 50px 0;
+	
+	@media (max-width: 575px) {
+		padding: 30px 15px;
+	}
 	
 	.seta {
 		display: block;

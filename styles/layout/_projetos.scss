@@ -65,8 +65,18 @@
 		margin-right: auto;
 		margin-left: auto;
 		
+		@media (max-width: 991px) {
+			flex-direction: column;
+			width: auto;
+			text-align: center;
+		}
+		
 		.projetos-selecao-box__texto {
 			width: 65%;
+			
+			@media (max-width: 991px) {
+				width: auto;
+			}
 			
 			.texto-destaque {
 				@include font-size(36px);
@@ -81,6 +91,12 @@
 		.projetos-selecao-box__botao {
 			width: 35%;
 			padding-left: 50px;
+			
+			@media (max-width: 991px) {
+				width: auto;
+				margin-top: 35px;
+				padding-left: 0;
+			}
 		}
 	}
 }
