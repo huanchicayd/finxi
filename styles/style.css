@@ -3598,6 +3598,162 @@ ul.nav-navmenu.visible {
     color: #fff;
     font-family: "Calibri-Bold"; }
 
+.banner-sobre {
+  margin-top: 80px;
+  background: url("../images/banner-sobre.png") no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .banner-sobre h2 {
+    color: #1a93b2;
+    font-size: 40px;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    font-family: "Calibri-Bold"; }
+    .banner-sobre h2:after {
+      content: '';
+      display: block;
+      width: 70px;
+      margin: auto;
+      height: 3px;
+      background: #fff; }
+
+.nosso-modelo-container {
+  background: #0a5162;
+  background: -moz-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0a5162), color-stop(100%, #042f3a));
+  background: -webkit-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: -o-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: radial-gradient(ellipse at center, #0a5162 0%, #042f3a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5162', endColorstr='#042f3a', GradientType=1 );
+  padding: 100px 0; }
+  .nosso-modelo-container .nosso-modelo__texto h3 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    font-family: "Calibri";
+    margin-bottom: 30px; }
+  .nosso-modelo-container .nosso-modelo__texto p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 30px; }
+  .nosso-modelo-container .nosso-modelo__infografico {
+    position: relative;
+    height: 100%; }
+    .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      left: 50%;
+      -webkit-transform: translatex(-50%);
+      -moz-transform: translatex(-50%);
+      -ms-transform: translatex(-50%);
+      -o-transform: translatex(-50%);
+      transform: translatex(-50%); }
+      .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper div {
+        border: 3px dashed #fff;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 70px; }
+        .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper div img {
+          width: 100px;
+          margin-bottom: 10px; }
+        .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper div h4 {
+          font-family: "Calibri-Bold";
+          color: #1a93b2;
+          font-size: 22px;
+          font-size: 1.375rem; }
+      .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__empreendedor {
+        position: absolute;
+        left: -225px;
+        top: 0; }
+        .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__empreendedor p {
+          font-family: "Calibri-Bold";
+          text-transform: lowercase;
+          font-size: 22px;
+          font-size: 1.375rem; }
+      .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__finxi-venture {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translatex(-50%) translatey(-50%);
+        -moz-transform: translatex(-50%) translatey(-50%);
+        -ms-transform: translatex(-50%) translatey(-50%);
+        -o-transform: translatex(-50%) translatey(-50%);
+        transform: translatex(-50%) translatey(-50%); }
+        .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__finxi-venture h4 {
+          margin-bottom: 30px; }
+          .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__finxi-venture h4 span {
+            color: #fff; }
+        .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__finxi-venture li {
+          margin-bottom: 15px; }
+        .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__finxi-venture:after {
+          content: '';
+          display: block;
+          width: 95%;
+          height: 95%;
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: -1;
+          -webkit-transform: translatex(-50%) translatey(-50%);
+          -moz-transform: translatex(-50%) translatey(-50%);
+          -ms-transform: translatex(-50%) translatey(-50%);
+          -o-transform: translatex(-50%) translatey(-50%);
+          transform: translatex(-50%) translatey(-50%); }
+      .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__cto-finxi {
+        position: absolute;
+        right: -225px;
+        bottom: 0; }
+        .nosso-modelo-container .nosso-modelo__infografico .nosso-modelo__infografico__wrapper .nosso-modelo__infografico__cto-finxi p {
+          font-family: "Calibri-Bold";
+          text-transform: lowercase;
+          font-size: 22px;
+          font-size: 1.375rem; }
+
+.metodologia-container {
+  background: url("../images/bg-metodologia.png") no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center; }
+  .metodologia-container .metodologia__prototipacao,
+  .metodologia-container .metodologia__crescimento,
+  .metodologia-container .metodologia__solidificacao,
+  .metodologia-container .metodologia__estrategia-saida {
+    border-radius: 50px;
+    border: 3px solid #1a93b2;
+    background: rgba(26, 147, 178, 0.4); }
+  .metodologia-container .metodologia__processos-texto {
+    border-bottom: 5px solid #1a93b2; }
+  .metodologia-container .metodologia__processos-title {
+    padding: 30px 30px; }
+
+.principais-beneficios-container {
+  background: #0a5162;
+  background: -moz-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0a5162), color-stop(100%, #042f3a));
+  background: -webkit-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: -o-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #0a5162 0%, #042f3a 100%);
+  background: radial-gradient(ellipse at center, #0a5162 0%, #042f3a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5162', endColorstr='#042f3a', GradientType=1 );
+  padding: 100px 0; }
+
+.quem-e-finxi-container {
+  padding: 100px 0 0 0; }
+
 .banner-projetos {
   margin-top: 80px;
   background: url("../images/banner-projetos.png") no-repeat center;
@@ -4036,7 +4192,13 @@ footer .footer-copyright {
       @media (max-width: 767px) {
         .footer-upper .footer-image:after {
           position: absolute;
-          top: 50px; } }
+          top: 50px;
+          left: 50%;
+          -webkit-transform: translatex(-50%);
+          -moz-transform: translatex(-50%);
+          -ms-transform: translatex(-50%);
+          -o-transform: translatex(-50%);
+          transform: translatex(-50%); } }
   .footer-upper .footer-info h4 {
     text-transform: uppercase;
     font-family: "Calibri-Bold";

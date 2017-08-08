@@ -97,6 +97,8 @@ footer {
 			@media (max-width: 767px) {
 				position: absolute;
 				top: 50px;
+				left: 50%;
+				@include transform(translatex(-50%));
 			}
 		}
 	}

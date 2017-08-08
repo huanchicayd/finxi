@@ -1,0 +1,178 @@
+.banner-sobre {
+	margin-top: 80px;
+	background: url("../images/banner-sobre.png") no-repeat;
+	background-size: cover;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	h2 {
+		color: $color-three;
+		@include font-size(40px);
+		text-transform: lowercase;
+		font-family: $text-bold;
+		
+		&:after {
+			content: '';
+			display: block;
+			width: 70px;
+			margin: auto;
+			height: 3px;
+			background: $color-one;
+		}
+	}
+}
+
+//.nosso-modelo-container * {
+//	border: 1px solid red;
+//}
+
+.nosso-modelo-container {
+	@include background-radial;
+	padding: 100px 0;
+	
+	.nosso-modelo__texto {
+		h3 {
+			@include font-size(26px);
+			font-family: $text-regular;
+			margin-bottom: 30px;
+		}
+		
+		p {
+			@include font-size(20px);
+			margin-bottom: 30px;
+		}
+	}
+	
+	.nosso-modelo__infografico {
+		position: relative;
+		height: 100%;
+		
+		.nosso-modelo__infografico__wrapper {
+			position: absolute;
+			width: 350px;
+			height: 350px;
+			left: 50%;
+			@include transform(translatex(-50%));
+			
+			div {
+				border: 3px dashed $color-one;
+				width: 270px;
+				height: 270px;
+				border-radius: 50%;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 0 70px;
+				
+				img {
+					width: 100px;
+					margin-bottom: 10px;
+				}
+				
+				h4 {
+					font-family: $text-bold;
+					color: $color-three;
+					@include font-size(22px);
+				}
+			}
+			
+			.nosso-modelo__infografico__empreendedor {
+				position: absolute;
+				left: -225px;
+				top: 0;
+				
+				p {
+					font-family: $text-bold;
+					text-transform: lowercase;
+					@include font-size(22px);
+				}
+			}
+			
+			.nosso-modelo__infografico__finxi-venture {
+				position: absolute;
+				width: 350px;
+				height: 350px;
+				left: 50%;
+				top: 50%;
+				@include transform(translatex(-50%) translatey(-50%));
+				
+				h4 {
+					margin-bottom: 30px;
+					
+					span {
+						color: $color-one;
+					}
+				}
+				
+				li {
+					margin-bottom: 15px;
+				}
+				
+				&:after {
+					content: '';
+					display: block;
+					width: 95%;
+					height: 95%;
+					background: rgba(0, 0, 0, .2);
+					border-radius: 50%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					z-index: -1;
+					@include transform(translatex(-50%) translatey(-50%));
+				}
+			}
+			
+			.nosso-modelo__infografico__cto-finxi {
+				position: absolute;
+				right: -225px;
+				bottom: 0;
+				
+				p {
+					font-family: $text-bold;
+					text-transform: lowercase;
+					@include font-size(22px);
+				}
+			}
+		}
+		
+		
+	}
+}
+
+.metodologia-container {
+	background: url("../images/bg-metodologia.png") no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+	text-align: center;
+	
+	.metodologia__prototipacao,
+	.metodologia__crescimento,
+	.metodologia__solidificacao,
+	.metodologia__estrategia-saida {
+		border-radius: 50px;
+		border: 3px solid $color-three;
+		background: rgba(26, 147, 178, .4);
+	}
+	
+	.metodologia__processos-texto {
+		border-bottom: 5px solid $color-three;
+	}
+	
+	.metodologia__processos-title {
+		padding: 30px 30px;
+	}
+}
+
+.principais-beneficios-container {
+	@include background-radial;
+	padding: 100px 0;
+}
+
+.quem-e-finxi-container {
+	padding: 100px 0 0 0;
+}

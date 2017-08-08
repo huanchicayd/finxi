@@ -76,6 +76,10 @@ $('.section-form-investidores').parallax({
 	imageSrc: 'images/bg-investidor.png'
 });
 
+$('.quem-e-finxi-container').parallax({
+	imageSrc: 'images/bg-quem-finxi.png'
+});
+
 // Typed JS, Frases de entrada da Home
 function escreverNaTela() {
 	var options = {
