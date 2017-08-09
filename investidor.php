@@ -56,10 +56,16 @@
 						Preencha o formulário abaixo e entraremos em contato para lhe apresentar os melhores investimentos baseados em suas experiências.
 					</p>
 					<form action="">
-						<input type="text" placeholder="Nome *">
-						<input type="email" placeholder="Email *">
-						<input type="tel" placeholder="Telefone *">
-
+						<input type="text" placeholder="Nome *" required>
+						<input type="email" placeholder="Email *" required>
+						<input type="tel" placeholder="Telefone *" required>
+						<label for="faixa-preco">Qual a faixa de investimento que procura?</label>
+						<button class="investimento-select">-</button>
+						<ul class="investimento-select__dropdown">
+							<li>0 a 100 mil reais</li>
+							<li>100 a 500 mil reais</li>
+							<li>Acima de 500 mil reais</li>
+						</ul>
 						<p class="form-campo-obrigatorio">* Campos obrigatórios</p>
 						<button class="btn btn-primary">Enviar</button>
 					</form>

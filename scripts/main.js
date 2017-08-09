@@ -9,7 +9,7 @@ $( document ).ready(function() {
 	
 	//Seta Scroll Down Home Header (Particles)
 	function scrollDownHeader() {
-		$('.scroll-down').click(function(event){
+		$('.btn-saiba-motivos').click(function(event){
 			event.preventDefault();
 			var sectionSobre = $('#teste').offset().top;
 			$('html, body').animate({
@@ -66,6 +66,8 @@ $( document ).ready(function() {
 		});
 	}
 	
+	
+	
 });
 
 $('.section-nosso-target').parallax({
@@ -99,3 +101,9 @@ function escreverNaTela() {
 	var typed = new Typed(".header-box h1", options);
 }
 
+$('.investimento-select').click(function(event){
+	event.preventDefault();
+	
+	var investimentoMenu = $('.investimento-select__dropdown');
+	investimentoMenu.slideToggle(100);
+});

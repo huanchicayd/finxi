@@ -143,9 +143,11 @@
 	
 	.form-investidores {
 		margin-bottom: 150px;
-		margin-left: 100px;
+		margin-left: auto;
+		margin-right: auto;
 		width: 50%;
-		text-align: center;
+		text-align: left;
+		background: rgba(26, 147, 178, .65);
 		
 		@media (max-width: 1199px) {
 			width: 70%;
@@ -165,7 +167,7 @@
 		p {
 			margin-bottom: 30px;
 			line-height: 20px;
-			padding: 0 50px;
+			@include font-size(20px);
 			
 			@media (max-width: 575px) {
 				padding: 0;
@@ -173,8 +175,9 @@
 		}
 		
 		form {
-			width: 60%;
-			margin: auto;
+			//width: 70%;
+			//margin-right: auto;
+			position: relative;
 			
 			@media (max-width: 575px) {
 				width: 100%;
@@ -186,11 +189,80 @@
 				border-bottom: 2px solid $color-one;
 				background: transparent;
 			}
+			
+			label {
+				font-family: $text-bold;
+				@include font-size(20px);
+				display: block;
+				margin: 15px 0;
+			}
+			
+			.investimento-select {
+				width: 100%;
+				height: 40px;
+				text-align: left;
+				color: $color-one;
+				@include font-size(18px);
+				background: $color-three;
+				border: 0;
+				padding: 5px 20px;
+				cursor: pointer;
+				position: relative;
+				
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					right: 15px;
+					@include transform(translatey(-50%));
+					
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 6.9px 4px 0 4px;
+					border-color: #ffffff transparent transparent transparent;
+				}
+			}
+			
+			ul {
+				width: 100%;
+				height: 40px;
+				display: none;
+				background: $color-three;
+				color: $color-one;
+				font-family: $text-regular;
+				border: 0;
+				position: absolute;
+				z-index: 3;
+				@include font-size(18px);
+				
+				li {
+					font-family: $text-light;
+					height: 40px;
+					background: $color-two;
+					padding: 10px 20px;
+					border: 0;
+					cursor: pointer;
+					@include font-size(20px);
+					
+					&:hover {
+						background: $color-three;
+					}
+				}
+			}
+			
+			button {
+				display: block;
+				margin: auto;
+			}
 		}
 		
 		.form-campo-obrigatorio {
 			text-align: left;
 			padding: inherit;
+			margin-top: 30px;
+			font-family: $text-bold;
 		}
 	}
 }

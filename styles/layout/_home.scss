@@ -61,24 +61,17 @@
 				}
 			}
 			
-			a.scroll-down {
+			button {
 				position: absolute;
 				bottom: 50px;
 				left: 50%;
-				border: 2px solid $color-one;
-				border-radius: 50%;
-				display: block;
-				width: 45px;
-				height: 45px;
+				border-radius: 50px;
 				z-index: 20;
-				text-align: center;
-				padding-top: 8px;
-				outline: 0;
-				@include transform(translatex(-25%));
-				
-				img {
-					width: 60%;
-				}
+				color: $color-one;
+				background: $color-three;
+				font-family: $text-bold;
+				@include font-size(22px);
+				@include transform(translatex(-50%));
 			}
 		}
 	}
@@ -162,7 +155,7 @@
 				url("../images/box-bg-down.png") no-repeat bottom left;
 	position: relative;
 	padding: 62px 0;
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 	
 	@media (max-width: 575px) {
 		background: none;
@@ -175,7 +168,7 @@
 	width: 90%;
 	@include font-size(26px);
 	font-family: $text-regular;
-	color: $color-four;
+	color: $color-one;
 	line-height: 36px;
 	
 	@media (max-width: 575px) {
@@ -209,8 +202,9 @@
 
 .target-text {
 	border-left: 3px solid #a6acb1;
-	padding-left: 50px;
+	padding-left: 30px;
 	padding-bottom: 70px;
+	padding-right: 60px;
 	
 	@media (max-width: 575px) {
 		border: 0;
@@ -222,6 +216,7 @@
 	p {
 		@include font-size(24px);
 		margin-bottom: 30px;
+		font-family: $text-light;
 		
 		&:last-child {
 			font-family: $text-bold;
@@ -261,7 +256,7 @@
 		text-align: center;
 		justify-content: center;
 		@include font-size(24px);
-		background: rgba(91, 103, 112, .50);
+		background: rgba(0, 0, 0, .50);
 		
 		@media (max-width: 767px) {
 			width: 130px;
@@ -323,8 +318,9 @@
 }
 
 .side-box {
-	background: rgba(91, 103, 112, .75);
+	background: rgba(26, 147, 178, .55);
 	border-radius: 50px;
+	border: 2px solid #0093b2;
 	padding: 50px 45px;
 	text-align: center;
 	width: 80%;
@@ -341,7 +337,6 @@
 		@include font-size(32px);
 		line-height: 50px;
 		font-family: $text-light;
-		font-weight: 100;
 	}
 	
 	button {

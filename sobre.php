@@ -52,7 +52,7 @@
 <div class="metodologia-container">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-12">
+			<div class="col-xl-12 metodologia__texto">
 				<h2>Metodologia</h2>
 				<p>
 					Assumimos o desenvolvimento e a gestão da tecnologia de informação de negócios inovadores com soluções customizadas, e também recrutamos e treinamos a equipe adequada para as necessidades de cada projeto.

@@ -6,9 +6,7 @@
 			<div class="header-box">
 				<h1></h1>
 			</div>
-			<a href="#" class="scroll-down">
-				<img src="images/arrow-down.svg" alt="">
-			</a>
+			<button class="btn btn-saiba-motivos">Saiba os motivos</button>
 		</div>
 	</div>
 </div>
