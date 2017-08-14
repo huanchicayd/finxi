@@ -3230,6 +3230,9 @@ a.btn-back {
             color: #fff;
             background: #000; } }
 
+.nav-navmenu li a.active {
+  color: #1a93b2; }
+
 ul.nav-navmenu.visible {
   display: block; }
 
@@ -3373,9 +3376,14 @@ ul.nav-navmenu.visible {
   padding: 150px 0;
   color: #fff;
   text-align: center; }
+  .section-sobre .row:first-child {
+    margin-left: -50px;
+    margin-right: -50px; }
+  .section-sobre div.sobre__informacoes {
+    padding: 0 50px; }
   .section-sobre img {
     max-width: 100%;
-    width: auto; }
+    width: 150px; }
   .section-sobre h2 {
     font-size: 34px;
     font-size: 2.125rem;
@@ -4309,29 +4317,55 @@ footer .footer-copyright {
 .footer-news h4 {
   font-family: "Calibri-Bold";
   margin-bottom: 30px;
+  color: #1a93b2;
   font-size: 20px;
   font-size: 1.25rem; }
 .footer-news input {
-  border: 0;
-  border-bottom: 2px solid #fff;
+  border: 2px solid #1a93b2;
   background: transparent;
   height: 40px;
   padding: 5px;
   outline: 0;
   color: #fff;
-  font-family: "Calibri-Bold";
+  font-family: "Calibri";
   width: 90%; }
-.footer-news input::-webkit-input-placeholder {
-  font-family: "Calibri-Bold";
-  color: rgba(255, 255, 255, 0.2); }
+  .footer-news input::-webkit-input-placeholder {
+    color: #fff;
+    font-family: "Calibri";
+    opacity: 1;
+    font-size: 18px;
+    font-size: 1.125rem; }
+  .footer-news input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    font-family: "Calibri";
+    opacity: 1;
+    font-size: 18px;
+    font-size: 1.125rem; }
+  .footer-news input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    font-family: "Calibri";
+    opacity: 1;
+    font-size: 18px;
+    font-size: 1.125rem; }
+  .footer-news input:-ms-input-placeholder {
+    color: #fff;
+    font-family: "Calibri";
+    opacity: 1;
+    font-size: 18px;
+    font-size: 1.125rem; }
 .footer-news button {
-  border: 2px solid #fff;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  border: 2px solid #1a93b2;
+  background: transparent;
+  color: #1a93b2;
   text-transform: lowercase;
   font-family: "Calibri-Bold";
   padding: 10px 25px;
   margin-top: 30px;
   cursor: pointer; }
+  .footer-news button:hover {
+    background: #1a93b2;
+    color: #000; }
 
 /*# sourceMappingURL=style.css.map */

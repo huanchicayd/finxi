@@ -4,7 +4,7 @@
 	<div id="particles-js">
 		<div class="container">
 			<div class="header-box">
-				<h1></h1>
+				<h1>Somos o <strong>CTO</strong> que<br>você procurava.</h1>
 			</div>
 			<button class="btn btn-saiba-motivos">Saiba os motivos</button>
 		</div>
@@ -14,17 +14,17 @@
 <section class="section-sobre" id="teste">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-xl-4 col-md-12 sobre__informacoes">
 				<img src="images/foguete.png" alt="">
 				<h2>Auxiliamos o seu negócio a decolar</h2>
 				<p>Estamos lado-a-lado como sócios, visando avidamente pelo sucesso dos nosso ventures, através da gestão eficiente da tecnologia.</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-xl-4 col-md-12 sobre__informacoes">
 				<img src="images/tecnicos.png" alt="">
 				<h2>Somos seus parceiros extremamente técnicos</h2>
 				<p>Selecionamos a melhor equipe para cada projeto e trabalhamos duro para que as ideias dos nosso empreendimentos sejam bem implementadas, testadas e validadadas com seus públicos-alvo.</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-xl-4 col-md-12 sobre__informacoes">
 				<img src="images/estrategia.png" alt="">
 				<h2>Aliamos tecnologia e estratégia</h2>
 				<p>Junto com empreendedores, co-criamos produtos e negócios, do seu planejamento ao desenvolvimento, com foco na gestão dos processos de TI.</p>
@@ -75,7 +75,7 @@
 			<div class="col-xl-5 col-md-12 col-sm-12">
 				<div class="side-box">
 					<h3>Nosso porfólio é escolhido a partir de um criterioso processo de seleção.</h3>
-					<button>Vamos conversar?</button>
+					<button class="btn btn-primary">Vamos conversar?</button>
 					<p><a href="#">Saiba mais</a> sobre o nosso método de desenvolvimento.</p>
 				</div>
 			</div>

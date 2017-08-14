@@ -84,9 +84,18 @@
 	color: $color-one;
 	text-align: center;
 	
+	.row:first-child {
+		margin-left: -50px;
+		margin-right: -50px;
+	}
+	
+	div.sobre__informacoes {
+		padding: 0 50px;
+	}
+	
 	img {
 		max-width: 100%;
-		width: auto;
+		width: 150px;
 	}
 	
 	h2 {

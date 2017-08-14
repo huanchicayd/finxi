@@ -89,6 +89,10 @@
 	}
 }
 
+.nav-navmenu li a.active {
+	color: $color-three;
+}
+
 ul.nav-navmenu.visible {
 	display: block;
 }

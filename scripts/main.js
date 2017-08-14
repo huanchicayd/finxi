@@ -82,28 +82,38 @@ $('.quem-e-finxi-container').parallax({
 	imageSrc: 'images/bg-quem-finxi.png'
 });
 
-// Typed JS, Frases de entrada da Home
-function escreverNaTela() {
-	var options = {
-		strings: [
-			"Somos o <strong>CTO</strong> que<br>você procurava.",
-			"Inserir frase 2.",
-			"Digitar outra frase aqui."
-		],
-		typeSpeed: 10,
-		backSpeed: 10,
-		backDelay: 1500,
-		startDelay: 1000,
-		loop: true,
-		cursorChar: ''
-	};
-	
-	var typed = new Typed(".header-box h1", options);
-}
+// // Typed JS, Frases de entrada da Home
+// function escreverNaTela() {
+// 	var options = {
+// 		strings: [
+// 			"Somos o <strong>CTO</strong> que<br>você procurava.",
+// 			"Inserir frase 2.",
+// 			"Digitar outra frase aqui."
+// 		],
+// 		typeSpeed: 10,
+// 		backSpeed: 10,
+// 		backDelay: 1500,
+// 		startDelay: 1000,
+// 		loop: true,
+// 		cursorChar: ''
+// 	};
+//
+// 	var typed = new Typed(".header-box h1", options);
+// }
 
 $('.investimento-select').click(function(event){
 	event.preventDefault();
 	
 	var investimentoMenu = $('.investimento-select__dropdown');
 	investimentoMenu.slideToggle(100);
+});
+
+//Active menu item with current url
+$(function() {
+	var pgurl = window.location.href.substr(window.location.href
+		.lastIndexOf("/")+1);
+	$(".nav-navmenu > li > a").each(function(){
+		if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+			$(this).addClass("active");
+	})
 });

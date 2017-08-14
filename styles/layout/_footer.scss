@@ -114,34 +114,41 @@ footer {
 	h4 {
 		font-family: $text-bold;
 		margin-bottom: 30px;
+		color: $color-three;
 		@include font-size(20px);
 	}
 	
 	input {
-		border: 0;
-		border-bottom: 2px solid $color-one;
+		//border: 0;
+		border: 2px solid $color-three;
 		background: transparent;
 		height: 40px;
 		padding: 5px;
 		outline: 0;
 		color: $color-one;
-		font-family: $text-bold;
+		font-family: $text-regular;
 		width: 90%;
-	}
-	
-	input::-webkit-input-placeholder {
-		font-family: $text-bold;
-		color: rgba(255, 255, 255, .2);
+		@include placeholder {
+			color: $color-one;
+			font-family: $text-regular;
+			opacity: 1;
+			@include font-size(18px);
+		}
 	}
 	
 	button {
-		border: 2px solid $color-one;
-		background: rgba(255, 255, 255, .2);
-		color: $color-one;
+		border: 2px solid $color-three;
+		background: transparent;
+		color: $color-three;
 		text-transform: lowercase;
 		font-family: $text-bold;
 		padding: 10px 25px;
 		margin-top: 30px;
 		cursor: pointer;
+		
+		&:hover {
+			background: $color-three;
+			color: $color-two;
+		}
 	}
 }

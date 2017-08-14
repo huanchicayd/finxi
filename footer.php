@@ -22,7 +22,6 @@
 </a>
 
 <script src="scripts/jquery.js"></script>
-<script src="scripts/plugins/typed.js"></script>
 <script src="scripts/plugins/fancybox.js"></script>
 <script src="scripts/plugins/slick.js"></script>
 <script src="scripts/plugins/parallax.js"></script>
