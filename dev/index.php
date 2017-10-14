@@ -15,19 +15,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-4 col-md-12 sobre__informacoes">
-				<img src="images/foguete.png" alt="">
-				<h2>Auxiliamos o seu negócio a decolar</h2>
-				<p>Estamos lado-a-lado como sócios, visando avidamente pelo sucesso dos nosso ventures, através da gestão eficiente da tecnologia.</p>
+				<img src="images/home-saiba-reduzimos_icon.svg" alt="">
+				<h2>Reduzimos custos e riscos da sua empresa</h2>
+				<p>Adicionamos todo o conhecimento que um sócio técnico sênior precisa ter com a experiência de anos da Finxi e nosso processo de formação de CTOs. <strong>Reduzimos os custos da empresa alocando a equipe no nosso espaço e utilizando toda a infraestrutura da Finxi.</strong></p>
 			</div>
 			<div class="col-xl-4 col-md-12 sobre__informacoes">
-				<img src="images/tecnicos.png" alt="">
-				<h2>Somos seus parceiros extremamente técnicos</h2>
-				<p>Selecionamos a melhor equipe para cada projeto e trabalhamos duro para que as ideias dos nosso empreendimentos sejam bem implementadas, testadas e validadadas com seus públicos-alvo.</p>
+				<img src="images/home-saiba-tecnico_icon.svg" alt="">
+				<h2>Somos seu sócio técnico</h2>
+				<p>Não somos uma empresa que terceiriza a área de TI, <strong>nós atuamos como sócios do negócio</strong>, fazendo parte das decisões e das soluções de problemas que venham a surgir durante o desenvolvimento de todo o negócio.</p>
 			</div>
 			<div class="col-xl-4 col-md-12 sobre__informacoes">
-				<img src="images/estrategia.png" alt="">
-				<h2>Aliamos tecnologia e estratégia</h2>
-				<p>Junto com empreendedores, co-criamos produtos e negócios, do seu planejamento ao desenvolvimento, com foco na gestão dos processos de TI.</p>
+				<img src="images/home-saiba-know_icon.svg" alt="">
+				<h2>Knowhow + Rede de Contatos</h2>
+				<p>Pensamos <strong>estrategicamente o negócio com a experiência de uma Venture Capital</strong> que atua conosco e possui mais de 30 empresas em seu portfólio.</p>
 			</div>
 		</div>
 		<div class="row">
@@ -53,8 +53,9 @@
 					<div class="target-box">
 						<h2>Nosso target</h2>
 						<div class="target-text">
-							<p>Empreendedores e empresas que visam estruturar seus negócios gerando valor e impacto através do desenvolvimento e gestão de TI.</p>
-							<p>Tenha um CTO e um time de tecnologia eficiente e disponível para ajudá-lo a tornar seu produto mais forte.</p>
+							<p>Empreendedores com experiência do mercado proposto que atua e um fôlego financeiro para desenvolver a ideia o mais rápido possível.</p>
+							<p><strong>Nosso público possui as dores de um CTO e estão precisando de alguém que entenda de negócios de tecnologia nos níveis Estratégico, Tático e Operacional.</strong></p>
+							<p><strong>Construímos juntos os níveis estratégicos, táticos e operacionais.</strong></p>
 						</div>
 					</div>
 					<div class="target-list">

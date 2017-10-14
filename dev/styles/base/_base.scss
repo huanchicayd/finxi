@@ -20,11 +20,12 @@ body {
 	height: 100%;
 	font-size: 62.5%;
 	color: $color-one;
+	background: #000;
 }
 
 body * {
 	@include font-size(14px);
-	font-weight: normal;
+	font-weight: unset;
 }
 
 p {

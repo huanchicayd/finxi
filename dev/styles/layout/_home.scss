@@ -70,8 +70,13 @@
 				color: $color-one;
 				background: $color-three;
 				font-family: $text-bold;
-				@include font-size(22px);
+				transition: background .25s;
+				@include font-size(20px);
 				@include transform(translatex(-50%));
+
+				&:hover {
+					background: lighten($color-three, 15%);
+				}
 			}
 		}
 	}
@@ -94,19 +99,19 @@
 	}
 	
 	img {
-		max-width: 100%;
-		width: 150px;
+		max-width: 100px;
+		width: 100px;
 	}
 	
 	h2 {
-		@include font-size(34px);
+		@include font-size(26px);
 		font-family: $text-bold;
 		margin-bottom: 25px;
 	}
 	
 	p {
 		@include font-size(20px);
-		line-height: 30px;
+		line-height: 28px;
 	}
 }
 
@@ -228,7 +233,6 @@
 		font-family: $text-light;
 		
 		&:last-child {
-			font-family: $text-bold;
 			margin-bottom: 0;
 		}
 	}

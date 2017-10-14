@@ -10,14 +10,8 @@
 			<div class="col-xl-4 col-lg-12 col-md-12">
 				<div class="nosso-modelo__texto">
 					<h3>
-						Boas ideias geram oportunidades, porém <strong>a execução é fundamental</strong> para o sucesso de um empreendimento.
+						<strong>Finxi Venture</strong> é a forma como garantimos o sucesso de cada negócio.
 					</h3>
-					<p>
-						Enquanto o <strong>empreendedor (CEO)</strong> concentra-se nas diretrizes do modelo de negócio, a <strong>finxi é o sócio técnico (CTO)</strong> que tem por missão tangibilizar suas ideias através da tecnologia. <strong>Nossa proposta é explorá-las com inteligência, pragmatismo e experiência.</strong>
-					</p>
-					<p>
-						Por meio do modelo <strong>finxi Venture</strong>, vamos juntos em direção ao sucesso.
-					</p>
 				</div>
 			</div>
 			<div class="col-xl-8 col-lg-12 col-md-12">
@@ -60,54 +54,31 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-3">
-				<div class="metodologia__prototipacao">
-					<div class="metodologia__processos-texto">
-						<p>Ideia</p>
-						<p>Protótipo ou MVP</p>
-						<p>Validação do negócio e suas hipóteses</p>
+			<div class="col-xl-12">
+				<div class="metodologia__processos-wrap">
+					<div class="metodologia__prototipacao">
+						<div class="processos-container processo01">
+							Primeira etapa
+							Prototipação
+						</div>
 					</div>
-					<div class="metodologia__processos-title">
-						Primeira etapa<br>
-						Prototipação
+					<div class="metodologia__crescimento">
+						<div class="processos-container processo02">
+							Segunda etapa
+							Crescimento
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="metodologia__crescimento">
-					<div class="metodologia__processos-texto">
-						<p>Validação de mercado e financeira</p>
-						<p>Eficiência de vendas e operacional</p>
-						<p>Escala</p>
+					<div class="metodologia__solidificacao">
+						<div class="processos-container processo03">
+							Terceira etapa
+							Solidificação
+						</div>
 					</div>
-					<div class="metodologia__processos-title">
-						Segunda etapa<br>
-						Crescimento
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="metodologia__solidificacao">
-					<div class="metodologia__processos-texto">
-						<p>Estruturação de processos</p>
-						<p>Preparação para saída</p>
-					</div>
-					<div class="metodologia__processos-title">
-						Terceira etapa<br>
-						Solidificação
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="metodologia__estrategia-saida">
-					<div class="metodologia__processos-texto">
-						<p>
-							Estruturação para saída
-						</p>
-					</div>
-					<div class="metodologia__processos-title">
-						Quarta etapa<br>
-						Estratégia de saída
+					<div class="metodologia__estrategia-saida">
+						<div class="processos-container processo04">
+							Quarta etapa
+							Spin Off
+						</div>
 					</div>
 				</div>
 			</div>
@@ -123,18 +94,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-12">
-				<div class="principais-beneficios__slider">
-					<div class="principais-beneficios__slide01">
-
-					</div>
-					<div class="principais-beneficios__slide02">
-
-					</div>
-					<div class="principais-beneficios__slide03">
-
-					</div>
-				</div>
+			<div class="col-xl-4">
+				<img src="images/sobre-beneficios-infra_icon.svg" alt="">
+				<p>Custeamos a infra, o real state e o dev-ops.</p>
+			</div>
+			<div class="col-xl-4">
+				<img src="images/sobre-beneficios-auxilio_icon.svg" alt="">
+				<p>Auxiliamos na contratação de programadores, gestores de produto e designers de interface. Montamos uma equipe elástica com alocações e realocações, de acordo com a necessidade.</p>
+			</div>
+			<div class="col-xl-4">
+				<img src="images/sobre-beneficios-mvp_icon.svg" alt="">
+				<p>Pensamos desde o MVP em como criar um produto robusto e escalável.</p>
 			</div>
 		</div>
 	</div>
@@ -144,10 +114,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-7">
-
+				<h2>Mas quem é a Finxi?</h2>
+				<p>Parceiros estratégicos, pessoas obstinadas em fazer dar certo. Lado a lado, gestão e tecnologia, adaptando-se de maneira eficiente em cada desafio e em cada projeto. Moldamos e co-criamos aplicativos, softwares e modelos de negócios tecnológicos para empreendimentos de impacto.</p>
 			</div>
 			<div class="col-xl-5">
-
+				<div class="side-box">
+					<h3>Nosso porfólio é escolhido a partir de um criterioso processo de seleção.</h3>
+					<button class="btn btn-primary">Vamos conversar?</button>
+					<p><a href="#">Saiba mais</a> sobre o nosso método de desenvolvimento.</p>
+				</div>
 			</div>
 		</div>
 	</div>

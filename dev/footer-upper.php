@@ -34,7 +34,7 @@
 					<h4>Fique por dentro, assine nossa newsletter!</h4>
 					<form action="">
 						<input type="text" placeholder="email@email.com.br">
-						<button>Cadastre-me</button>
+						<button>Cadastre-se</button>
 					</form>
 				</div>
 			</div>

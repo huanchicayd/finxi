@@ -2,9 +2,7 @@
 	<div class="footer-copyright">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-sm-10 col-9">
-					finxi &copy Finxi S.A. Todos os direitos reservados.
-				</div>
+				<div class="col-md-10 col-sm-10 col-9">finxi © Finxi S.A. - CNPJ 11.747.686/0001-03. Todos os direitos reservados.</div>
 				<div class="col-md-2 col-sm-2 col-3">
 					<div class="footer-natio">
 						<a href="http://www.natiocriativo.com" target="_blank" title="Desenvolvido por Natio Criativo. Visite nosso site: www.natiocriativo.com">

@@ -36,7 +36,7 @@
 								<a href="projetos.php">Projetos</a>
 							</li>
 							<li>
-								<a href="investidor.php">Investidor</a>
+								<a href="investidor.php">Para investidores</a>
 							</li>
 							<li>
 								<a href="contato.php">Contato</a>
